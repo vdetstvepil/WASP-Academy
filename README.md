@@ -1,1 +1,1 @@
-# WASP-Academy-Homework-BasicOperations
+# WASP-Academy
