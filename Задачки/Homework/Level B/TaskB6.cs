@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +14,6 @@ namespace Homework
     //
     // Пример:
     // Reverser("reverse letters") ==> "esrever srettel".
-    [TestClass]
     public static class TaskB6
     {
         public static string Reverser(string s)
@@ -24,14 +22,5 @@ namespace Homework
 
             return "";
         }
-
-        [TestMethod]
-        public static void Test1() => Assert.AreEqual("esrever srettel", Homework.TaskB6.Reverser("reverse letters"), "TEST ERROR");
-
-        [TestMethod]
-        public static void Test2() => Assert.AreEqual("A nuf elttil !egnellahc", Homework.TaskB6.Reverser("A fun little challenge!"), "TEST ERROR");
-
-        [TestMethod]
-        public static void Test3() => Assert.AreEqual("  ", Homework.TaskB6.Reverser("  "), "TEST ERROR");
     }
 }

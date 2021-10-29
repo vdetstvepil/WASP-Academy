@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +19,6 @@ namespace Homework
     // + a      +
     // + frame  +
     // ++++++++++
-    [TestClass]
     public static class TaskB5
     {
         public static string Frame(List<string> text, char symbol)
@@ -29,13 +27,5 @@ namespace Homework
 
             return "";
         }
-
-        [TestMethod]
-        public static void Test1() => Assert.AreEqual("~~~~~~~~~\n~ Small ~\n~ text  ~\n~ frame ~\n~~~~~~~~~",
-           Homework.TaskB5.Frame(new List<string>() { "Small", "text", "frame" }, '~'), "TEST ERROR");
-
-        [TestMethod]
-        public static void Test2() => Assert.AreEqual("------------------------------------\n- This is a very long single frame -\n------------------------------------",
-            Homework.TaskB5.Frame(new List<string>() { "This is a very long single frame" }, '-'), "TEST ERROR");
     }
 }

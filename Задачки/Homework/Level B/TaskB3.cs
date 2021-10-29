@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +17,6 @@ namespace Homework
     // decrypt('$aaaa#bbb*cc^fff!z') ==> '43200300000000000000000001'
     //           ^    ^   ^  ^  ^         ^^^  ^                   ^
     //          [4]  [3] [2][3][1]        abc  f                   z
-    [TestClass]
     public static class TaskB3
     {
         public static string Decrypt(string key)
@@ -27,11 +25,5 @@ namespace Homework
 
             return "";
         }
-
-        [TestMethod]
-        public static void Test1() => Assert.AreEqual("43200300000000000000000001", Homework.TaskB3.Decrypt("$aaaa#bbb*ccfff!z"), "TEST ERROR");
-
-        [TestMethod]
-        public static void Test2() => Assert.AreEqual("30303000000000000000000001", Homework.TaskB3.Decrypt("z$aaa#ccc%eee1234567890"), "TEST ERROR");
     }
 }
