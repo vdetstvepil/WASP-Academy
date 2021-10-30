@@ -21,7 +21,7 @@ namespace UnitTests
         public void Test3() => CollectionAssert.AreEqual(new List<int>() { 0, 0, 0, 0 }, Homework.TaskC2.ChangeCent(0), "TEST ERROR");
 
         [TestMethod]
-        public void Test4() => CollectionAssert.AreEqual(new List<int>() { 2, 1, 2, 4 }, Homework.TaskC2.ChangeCent(127), "TEST ERROR");
+        public void Test4() => CollectionAssert.AreEqual(new List<int>() { 2, 0, 0, 5 }, Homework.TaskC2.ChangeCent(127), "TEST ERROR");
 
         [TestMethod]
         public void Test5() => CollectionAssert.AreEqual(new List<int>() { 3, 0, 0, 0 }, Homework.TaskC2.ChangeCent(3.9), "TEST ERROR");
